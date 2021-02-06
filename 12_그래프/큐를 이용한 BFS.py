@@ -10,7 +10,7 @@ BFS(G, start_v)
          if v is the goal then
             return v
         for all edges from v to w in G.adjacentEdges(v) do
-            if w is not labeled as discovered then
+            if w not labeled as discovered then
                 label w as discovered
                 w.parent := v
                 Q.enqueue(w)

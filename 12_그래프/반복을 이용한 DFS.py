@@ -16,7 +16,7 @@ def iterative_dfs(start_v):
     stack = [start_v]
     while stack:
         v = stack.pop()
-        if v is not in discovered:
+        if v not in discovered:
             discovered.append(v)
             for w in graph[v]:
                 stack.push(w)
